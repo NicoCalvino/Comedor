@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;   
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#ebebeb
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(0, 69, 138)
+}
+
+/*BLOQUE AZUL ARRIBA DE TODO*/
+
+.head-bloqueAzul{
+    width:100%;
+    height:30px;
+    background-color: rgb(0, 69, 138);
+}
+
+/*ECABEZADO PRINCIPAL*/
+
+.head-main-head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.head-main-head .head-burger-menu{
+    width:10%;
+}
+
+.head-main-head .head-burger-menu .fa-bars{
+    width:100%;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: RGB(220,220,220);
+    color: black;
+    font-size: 30px;
+}
+
+.head-main-head .head-burger-menu ul{
+    display: none;
+}
+
+.head-main-head .head-logo-colegio{
+    width:80%
+}
+
+.head-main-head .head-logo-colegio img{
+    width:100%
+}
+
+.head-log-bar{
+    display:none
+}
+
+.head-secc-bar{
+    display: none;
+}
+
+/* FOOTER */
+
+.foot-main-foot{
+    background-color: rgb(32,35,46);
+    font-size: 15px;
+    color:rgb(200,200,200);
+    padding: 10px 5px;
+}
+
+.foot-main-foot ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-main-foot ul li{
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.foot-bloque-oscuro{
+    height: 30px;
+    background-color: rgb(27,29,38);
+}
+
+
+/* Media Querys */
+
+
+@media(min-width:576px){
+    .head-main-head{
+        margin: 5px 0;
+    }
+    .head-main-head .head-burger-menu{
+        display:none;
+    }
+
+    .head-main-head .head-logo-colegio{
+        width:50%
+    }
+
+    .head-log-bar{
+        width:50%;
+        display:block
+    }
+
+    .head-log-bar ul{
+        font-size: 25px;
+        display:flex;
+        justify-content: center;
+    }
+
+    .head-log-bar ul li{
+        margin: 0 10px 0;
+    }
+
+    .head-secc-bar{
+        display:block;
+        color: white;
+        background-color: rgb(0, 69, 138);
+    }
+
+    .head-secc-bar ul{
+        display:flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .head-secc-bar ul li{
+        margin: 0 20px 0
+    }
+
+    .head-secc-bar a{
+        color: white;
+    }
+}
+
+@media(min-width:769px){
+    .head-main-head .head-logo-colegio{
+        width:30%
+    }
+
+    .head-log-bar ul{
+        font-size: 35px;
+    }
+
+}
