@@ -1,9 +1,8 @@
 <%- include('../partials/header',{hojaDeEstilo:"/css/stylesLogin.css", titulo:"INGRESAR"}) %>
 <main>
-    <div class="espacio-header"></div>
     <form action="/user/login" method="POST" id="login">
         <div class="info-personal">
-            <h3 class="titulo-seccion">Iniciar Sesión</h3>
+            <h3 class="titulo-seccion">INICIAR SESIÓN</h3>
             <input type="email" name="email" id="email" placeholder="Correo Electrónico">
             <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña">
         </div>
@@ -14,8 +13,11 @@
         <div class="botones">
             <input type="submit" value="INGRESAR">
         </div>
-        <a href="#">Olvide mi contraseña</a>
+        <div class="olvide-contrasena">
+            <a href="#">Olvide mi contraseña</a>
+        </div>
     </form>
+    <div class="bloque-inferior"></div>
 </main>
 <script src="/js/login.js"></script>
 <%- include('../partials/footer') %>

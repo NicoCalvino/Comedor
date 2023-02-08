@@ -33,6 +33,7 @@ a{
     justify-content: space-around;
     align-items: center;
     background-color: white;
+    border-bottom: 2px solid rgb(0, 69, 138);
 }
 
 .head-main-head .head-burger-menu{
@@ -104,6 +105,7 @@ a{
 @media(min-width:576px){
     .head-main-head{
         margin: 5px 0;
+        border-bottom: none;
     }
     .head-main-head .head-burger-menu{
         display:none;
