@@ -43,9 +43,17 @@ main{
     border-radius: 10px;
 }
 
-.olvide-contrasena{
+.links-extra{
     width: 100%;
     margin: 15px auto 5px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.links-extra a{
+    width:40%; 
+    text-align: center;
 }
 
 .bloque-inferior{
