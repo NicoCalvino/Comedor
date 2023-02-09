@@ -1,0 +1,20 @@
+<%- include('../partials/header',{hojaDeEstilo:"/css/stylesRegister.css", titulo:"REGISTRARSE"}) %>
+<main>
+    <form action="/users/register" method="POST" id="register">
+        <h3 class="titulo-seccion">REGISTRARSE</h3>
+        <div class="info-usuario">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+            <input type="email" name="email" placeholder="Correo Electrónico">
+            <input type="password" name="contrasena" id="contrasena" placeholder="Contrasena">
+            <input type="repetir-password" name="repetirPassword" id="repetir-password" placeholder="Repetir Contrasena">
+        </div>
+        <div class="botones">
+            <input type="submit" value="CREAR CUENTA">
+        </div>
+    </form>
+    <div class="links-extra">
+        <a href="/">Ya tengo cuenta</a>
+    </div>
+</main>
+<%- include('../partials/footer') %>
