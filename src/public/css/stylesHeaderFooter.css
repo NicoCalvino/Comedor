@@ -98,6 +98,9 @@ a{
     background-color: rgb(27,29,38);
 }
 
+.bloque-inferior{
+    height: 500px;
+}
 
 /* Media Querys */
 

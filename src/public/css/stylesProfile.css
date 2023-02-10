@@ -3,11 +3,12 @@ main{
     margin:10px auto
 }
 
-.infousuario{
+.info-usuario{
     display:flex;
     flex-wrap: wrap;
+    margin:15 px auto;
 }
 
-.infousuario h2{
+.info-usuario h2{
     width: 100%;
 }
