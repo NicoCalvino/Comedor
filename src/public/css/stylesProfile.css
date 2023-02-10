@@ -1,6 +1,11 @@
 main{
-    width:80%;
+    width:90%;
     margin:10px auto
+}
+
+a{
+    text-decoration: none;
+    color:black
 }
 
 .info-usuario{
@@ -11,4 +16,82 @@ main{
 
 .info-usuario h2{
     width: 100%;
+    margin-top:5px;
 }
+
+.info-usuario .nombre-usuario{
+    font-size: 28px;
+}
+
+.info-usuario .mail-usuario{
+    font-size: 20px;
+}
+
+.info-usuario button.cuenta{
+    width: 30%;
+    font-size: 14px;
+    margin-bottom:2px;
+    border-radius: 5px;
+    line-height: 22px;
+    margin:5px 0px;
+}
+
+.info-usuario .alumnas{
+    margin-top:15px
+}
+
+.alumnas h2{
+    text-decoration: underline;
+    margin-bottom:5px
+}
+
+.alumnas .info-alumna{
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alumnas .info-alumna .informacion{
+    width:45%
+}
+
+.alumnas .info-alumna .informacion .nombre-alumna{
+    font-size: 20px;
+}
+
+.alumnas .info-alumna .informacion .curso-alumna{
+    font-size: 16px;
+}
+
+.alumnas .info-alumna .informacion .vale-cargado{
+    font-size: 12px;
+}
+
+.alumnas .info-alumna .botones{
+    width:45%
+}
+
+.alumnas .info-alumna .botones button{
+    width:100%;
+    font-size: 16px;
+    margin-bottom:2px;
+    border-radius: 5px;
+    line-height: 24px;
+}
+
+.alumnas .nueva-alumna{
+    margin: 20px auto
+}
+
+.alumnas .nueva-alumna button{
+    width: 40%;
+    font-size: 16px;
+    margin-bottom:2px;
+    border-radius: 5px;
+    line-height: 24px;
+}
+
+
+

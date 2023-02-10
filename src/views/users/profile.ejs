@@ -1,10 +1,38 @@
 <%- include('../partials/header',{hojaDeEstilo:"/css/stylesProfile.css", titulo:"Completar Titulo"}) %>
 <main>
     <div class="info-usuario">
-        <h2>Nombre y Apellido</h2>
-        <h2>E-Mail:</h2>
-        <div class="info-alumnos">
-            <h2>Alumnas</h2>
+        <h2 class="nombre-usuario">Maria Chusena</h2>
+        <h2 class="mail-usuario">mailejemplo@hotmail.com</h2>
+        <button class="cuenta"><a>Ver Cuenta</a></button>
+        <div class="alumnas">
+            <h2>ALUMNAS</h2>
+            <div class="info-alumna">
+                <div class="informacion">
+                    <h3 class="nombre-alumna">Sofia Chusena</h3>
+                    <h4 class="curso-alumna">2B</h4>
+                    <h4 class="vale-cargado">Mensual: Lunes Miercoles Jueves</h4>
+                </div>
+                <div class="botones">
+                    <button><a>Vale Mensual</a></button>
+                    <button><a>Vale Diario</a></button>
+                    <button><a>Inasistencias</a></button>
+                </div>
+            </div>
+            <div class="info-alumna">
+                <div class="informacion">
+                    <h3 class="nombre-alumna">Andrea Chusena</h3>
+                    <h4 class="curso-alumna">4B</h4>
+                    <h4 class="vale-cargado">Mensual: Lunes Martes Miercoles</h4>
+                </div>
+                <div class="botones">
+                    <button><a>Vale Mensual</a></button>
+                    <button><a>Vale Diario</a></button>
+                    <button><a>Inasistencias</a></button>
+                </div>
+            </div>
+            <div class="nueva-alumna">
+                <button><a>Agregar Alumna</a></button>   
+            </div>
         </div>
     </div>
 </main>
