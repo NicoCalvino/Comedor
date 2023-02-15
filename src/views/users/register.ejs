@@ -3,11 +3,27 @@
     <form action="/users/register" method="POST" id="register">
         <h3 class="titulo-seccion">REGISTRARSE</h3>
         <div class="info-usuario">
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-            <input type="email" name="email" placeholder="Correo Electrónico">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" <%=locals.oldInfo && oldInfo.nombre ? "value=" + oldInfo.nombre : '' %>>
+            <% if(locals.errores && errores.nombre){ %>
+                <span class="feedback"><%= errores.nombre.msg %></span>
+            <% } %>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" <%=locals.oldInfo && oldInfo.apellido ? "value=" + oldInfo.apellido : '' %>>
+            <% if(locals.errores && errores.apellido){ %>
+                <span class="feedback"><%= errores.apellido.msg %></span>
+            <% } %>
+            <input type="email" name="email" placeholder="Correo Electrónico" <%=locals.oldInfo && oldInfo.email ? "value=" + oldInfo.email : '' %>>
+            <% if(locals.errores && errores.email){ %>
+                <span class="feedback"><%= errores.email.msg %></span>
+            <% } %>
+            <input type="tel" name="celular" placeholder="Celular" <%=locals.oldInfo && oldInfo.celular ? "value=" + oldInfo.celular : '' %>>
+            <% if(locals.errores && errores.celular){ %>
+                <span class="feedback"><%= errores.celular.msg %></span>
+            <% } %>
             <input type="password" name="contrasena" id="contrasena" placeholder="Contrasena">
-            <input type="repetir-password" name="repetirPassword" id="repetir-password" placeholder="Repetir Contrasena">
+            <input type="password" name="repetirPassword" id="repetir-password" placeholder="Repetir Contrasena">
+            <% if(locals.errores && errores.repetirPassword){ %>
+                <span class="feedback"><%= errores.repetirPassword.msg %></span>
+            <% } %>
         </div>
         <div class="botones">
             <input type="submit" value="CREAR CUENTA">

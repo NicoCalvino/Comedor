@@ -1,0 +1,33 @@
+<%- include('../partials/header',{hojaDeEstilo:"/css/stylesNuevaAlumna.css", titulo:"Completar Titulo"}) %>
+<main>
+    <h2>Nombre Madre/Padre</h2>
+    <h3>Nombre Alumna</h3>
+
+    <div class="vale-mensual">
+        <form action="/alumnas/ValeMensual" method="POST">
+            <p>Seleccionar Días</p>
+            <input type="checkbox" name="diasMensual" value="Lunes" id="Lunes"><label for="Lunes">Lunes</label>
+            <input type="checkbox" name="diasMensual" value="Martes" id="Martes"><label for="Martes">Martes</label>
+            <input type="checkbox" name="diasMensual" value="Miércoles" id="Miércoles"><label for="Miércoles">Miércoles</label>
+            <input type="checkbox" name="diasMensual" value="Jueves" id="Jueves"><label for="Jueves">Jueves</label>
+            <input type="checkbox" name="diasMensual" value="Viernes" id="Viernes"><label for="Viernes">Viernes</label>
+            <input type="submit" class="boton-confirmar" value="CONFIRMAR">
+        </form>
+    </div>
+    <div class="vale-diario">
+        <form action="/alumnas/ValeDiario" method="POST">
+            <p>Seleccionar Día</p>
+            <input type="date" name="fechaValeDiario" value="fechaValeDiario" id="fechaValeDiario"><label for="fechaValeDiario">Indicar Día</label>
+            <input type="submit" class="boton-confirmar" value="CONFIRMAR">
+        </form>
+    </div>
+    <div class="inasistencia">
+        <form action="/alumnas/inasistencia" method="POST">
+            <p>Seleccionar Día</p>
+            <input type="date" name="fechaInasistencia" value="fechaInasistencia" id="fechaInasistencia"><label for="fechaInasistencia">Indicar Día</label>
+            <input type="submit" class="boton-confirmar" value="CONFIRMAR">
+        </form>
+    </div>
+</main>
+
+<%- include('../partials/footer') %>

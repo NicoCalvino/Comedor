@@ -27,6 +27,12 @@ main{
     border-radius: 5px;
 }
 
+.feedback{
+    margin-left:10px;
+    font-size: 10px;
+    color:red
+}
+
 .botones{
     width:80%;
     margin:5px auto

@@ -1,0 +1,31 @@
+<%- include('../partials/header',{hojaDeEstilo:"/css/stylesNuevaAlumna.css", titulo:"Completar Titulo"}) %>
+<main>
+    <h2>AGREGAR ALUMNA</h2>
+    <form action="/alumnas/nuevaAlumna" method="POST" class="info-nueva-alumna">
+        <div class="categoria-informacion curso-alumna">
+            <label class="titulo-categoria"  for="curso">CURSO:</label>
+            <select name="curso" id="curso" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="categoria-informacion lista-alumnas">
+            <label class="titulo-categoria" for="nombreAlumna">NOMBRE:</label>
+            <select name="nombre-alumna" id="nombreAlumna" required>
+                <option value="Cosme Fulanita">Cosme Fulanita</option>
+                <option value="Benita Camela">Benita Camela</option>
+                <option value="Aguaba Barrasa">Aguaba Barrasa</option>
+            </select>
+        </div>
+        <div class="categoria-informacion comentarios-extra">
+            <label class="titulo-categoria" for="comentariosExtra">COMENTARIOS:</label>
+            <textarea id="comentariosExtra"></textarea>
+        </div>
+        <div class="botones">
+            <input type="submit" value="CONFIRMAR">
+            <input type="reset" value="REINICIAR">
+        </div>
+    </form>
+</main>
+<%- include('../partials/footer') %>
